@@ -8,6 +8,6 @@ import java.util.List;
  */
 
 
-public interface TaskService {
+public interface TestService {
     void echo(String message);
 }

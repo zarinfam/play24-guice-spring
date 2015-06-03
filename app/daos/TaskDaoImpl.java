@@ -9,7 +9,7 @@ import org.springframework.stereotype.Repository;
  */
 
 @Repository
-public class TaskDaoImpl implements TaskDao {
+public class TaskDaoImpl implements TestDao {
 
     @Override
     public void echo(String message) {

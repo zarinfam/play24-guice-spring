@@ -1,23 +1,21 @@
 package services;
 
-import daos.TaskDao;
+import daos.TestDao;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 /**
  * Created by saeed on 9/March/15 AD.
  */
 
 @Service
-public class TaskServiceImpl implements TaskService{
+public class TestServiceImpl implements TestService {
 
     @Autowired
-    private TaskDao taskDao;
+    private TestDao testDao;
 
     @Override
     public void echo(String message) {
-        taskDao.echo(message);
+        testDao.echo(message);
     }
 }

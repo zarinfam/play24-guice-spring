@@ -1,19 +1,18 @@
 package controllers;
 
 import com.google.inject.Inject;
-import play.*;
 import play.mvc.*;
 
-import services.TaskService;
+import services.TestService;
 import views.html.*;
 
 public class Application extends Controller {
 
     @Inject
-    private TaskService taskService;
+    private TestService testService;
 
     public Result index() {
-        taskService.echo("saeed");
+        testService.echo("saeed");
         return ok(index.render("Your new application is ready."));
     }
 
